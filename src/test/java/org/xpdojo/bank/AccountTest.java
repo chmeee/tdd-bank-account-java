@@ -21,4 +21,11 @@ public class AccountTest {
         assertThat(account.balance(), is(100));
     }
 
+    @Test
+    public void depositMultipleAmountToIncreaseTheBalance() {
+        Account account = new Account();
+        account.deposit(100);
+        account.deposit(50);
+        assertThat(account.balance(), is(150));
+    }
 }
