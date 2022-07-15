@@ -52,7 +52,7 @@ public class AccountTest {
         Account account2 = new Account();
         account1.deposit(200);
         account1.transfer(account2, 100);
-        assertThat(account1.balance(), is(100)));
+        assertThat(account1.balance(), is(100));
         assertThat(account2.balance(), is(100));
     }
 }

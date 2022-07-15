@@ -19,4 +19,9 @@ public class Account {
         balance -= amount;
         return balance;
     }
+
+    public void transfer(Account recipient, int amount) {
+        balance -= amount;
+        recipient.deposit(amount);
+    }
 }
